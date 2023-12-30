@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Wordle</title>
+        <link rel="stylesheet" href="./src/style.css">
+    </head>
+    <body>
+        <div id="game">
+            <div class="title">
+                <h1>Wordle</h1>
+            </div>
+            <div class="grid">
+            </div>
+        </div>
+        <div class="keyboard" id="keyboard">
+            <div class="row">
+                <button onclick="handleButtonClick('Q')">Q</button>
+                <button onclick="handleButtonClick('W')">W</button>
+                <button onclick="handleButtonClick('E')">E</button>
+                <button onclick="handleButtonClick('R')">R</button>
+                <button onclick="handleButtonClick('T')">T</button>
+                <button onclick="handleButtonClick('Y')">Y</button>
+                <button onclick="handleButtonClick('U')">U</button>
+                <button onclick="handleButtonClick('I')">I</button>
+                <button onclick="handleButtonClick('O')">O</button>
+                <button onclick="handleButtonClick('P')">P</button>
+            </div>
+            <div class="row">
+                <button onclick="handleButtonClick('A')">A</button>
+                <button onclick="handleButtonClick('S')">S</button>
+                <button onclick="handleButtonClick('D')">D</button>
+                <button onclick="handleButtonClick('F')">F</button>
+                <button onclick="handleButtonClick('G')">G</button>
+                <button onclick="handleButtonClick('H')">H</button>
+                <button onclick="handleButtonClick('J')">J</button>
+                <button onclick="handleButtonClick('K')">K</button>
+                <button onclick="handleButtonClick('L')">L</button>
+            </div>
+            <div class="row">
+                <button onclick="handleButtonClick('Z')">Z</button>
+                <button onclick="handleButtonClick('X')">X</button>
+                <button onclick="handleButtonClick('C')">C</button>
+                <button onclick="handleButtonClick('V')">V</button>
+                <button onclick="handleButtonClick('B')">B</button>
+                <button onclick="handleButtonClick('N')">N</button>
+                <button onclick="handleButtonClick('M')">M</button>
+            </div>
+            <div class="row">
+                <button onclick="handleButtonClick()">Backspace</button>
+            </div>
+        </div>
+        <div class="bottomLeft">
+            <button id="resetButton" onclick="handleReset()">Reset</button>
+        </div>
+        <script src="./src/index.js" type="module"></script>
+    </body>
+</html>

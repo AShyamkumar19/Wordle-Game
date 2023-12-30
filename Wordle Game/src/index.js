@@ -188,5 +188,5 @@ function startup() {
     console.log(state.secret);
 }
 
-// calling the startup function
+// calling the startup function change
 startup();

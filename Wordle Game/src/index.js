@@ -155,29 +155,6 @@ function removeLetter(letter) {
     state.currentCol--;
 }
 
-// Add this function to handle the Reset button click
-// function handleReset() {
-//     state.secret = dictionary[Math.floor(Math.random() * dictionary.length)];
-//     state.grid = Array(6).fill().map(() => Array(5).fill(''));
-//     state.currentRow = 0;
-//     state.currentCol = 0;
-//     state.gameover = false;
-    
-//     // Clear the grid
-//     for (let i = 0; i < state.grid.length; i++) {
-//         for (let j = 0; j < state.grid[i].length; j++) {
-//             const box = document.getElementById(`box${i}${j}`);
-//             box.textContent = '';
-//             box.className = 'box';
-//         }
-//     }
-
-//     updateGrid();
-// }
-
-// // Add this line to register the Reset button click event
-// document.getElementById('resetButton').addEventListener('click', handleReset);
-
 // starts the game
 function startup() {
     const game = document.getElementById('game');
@@ -188,5 +165,5 @@ function startup() {
     console.log(state.secret);
 }
 
-// calling the startup function change
+// calling the startup function 
 startup();

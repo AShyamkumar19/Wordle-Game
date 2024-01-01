@@ -1,6 +1,6 @@
 import {dictionary} from './Dictionary.js';
-import { fetchData } from './GetWord.js';
-const apiURL = 'https://random-word-api.herokuapp.com/word?length=5';
+//import { fetchData } from './GetWord.js';
+//const apiURL = 'https://random-word-api.herokuapp.com/word?length=5';
 
 // state of the game
 const state = {

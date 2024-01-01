@@ -1,8 +1,11 @@
-const dictionary = ['world', 'fives', 'cloud', 'adieu', 'clone'];
+import {dictionary} from './Dictionary.js';
+import { fetchData } from './GetWord.js';
+const apiURL = 'https://random-word-api.herokuapp.com/word?length=5';
 
 // state of the game
 const state = {
     secret: dictionary[Math.floor(Math.random() * dictionary.length)],
+    //secret: fetchData(apiURL),
     grid: Array(6)
         .fill()
         .map(() => Array(5).fill('')),

@@ -1,7 +1,14 @@
 import {dictionary} from './Dictionary.js';
 //import { fetchData } from './GetWord.js';
-//const apiURL = 'https://random-word-api.herokuapp.com/word?length=5';
 
+const resetButton = document.createElement('button');
+resetButton.textContent = 'Reset';
+resetButton.addEventListener('click', () => {
+    location.reload();
+});
+document.body.appendChild(resetButton);
+
+const apiURL = 'https://random-word-api.herokuapp.com/word?length=5';
 // state of the game
 const state = {
     secret: dictionary[Math.floor(Math.random() * dictionary.length)],

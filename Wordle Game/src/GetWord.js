@@ -11,22 +11,14 @@ function fetchData(apiURL) {
         return response.json();
       })
       .then(data => {
-        //console.log(data);
-        return data; // You can modify this to return whatever data you need
+        console.log(data);
+        const finalWord = JSON.stringify(data);
+        const final = finalWord.slice(2, -2);
+        console.log(final);
+        return final;
       })
       .catch(error => {
-        //console.error('There has been a problem with your fetch operation:', error);
-        throw error; // Re-throw the error to propagate it to the caller
+        console.error('There has been a problem with your fetch operation:', error);
+        throw error;
       });
   }
-
-console.log(fetchData(apiURL));
-const word = fetchData(apiURL);
-
-//function cleanWord(word) {
-        //const finalWord = word.slice(2, -2);
-        //return finalWord;
-//}
-
-
-//console.log(cleanWord(word));

@@ -1,5 +1,3 @@
-// Gets the word for the game
-
 const apiURL = 'https://random-word-api.herokuapp.com/word?length=5';
 
 function fetchData(apiURL) {

@@ -174,6 +174,5 @@ function startup() {
 
     console.log(state.secret);
 }
-
 // calling the startup function 
 startup();
